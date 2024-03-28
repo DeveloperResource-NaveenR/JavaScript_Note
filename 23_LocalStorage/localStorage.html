@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(24, 12, 34);
+        }
+
+        section {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        button {
+            padding: 10px 10px;
+            margin: 10px 30px;
+            width: 200px;
+
+        }
+
+        #btn1 {
+            background-color: rgb(217, 134, 26);
+        }
+
+        #btn2 {
+            background-color: rgb(26, 217, 102);
+        }
+
+        #btn3 {
+            background-color: rgb(196, 6, 6);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <button id="btn1">Add</button>
+            <button id="btn2">Get</button>
+            <button id="btn3">Delete</button>
+        </div>
+    </section>
+    <script>
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let btn3 = document.getElementById("btn3");
+        const data = { name: "Vinod", age: 30, city: "pune" };
+        const addList = () => {
+            const add = localStorage.setItem("addRecord", JSON.stringify(data))
+        }
+
+        const GetList = () => {
+            const get = JSON.parse(localStorage.getItem("addRecord"));
+            console.log(get);
+        }
+        const DeleteList = () => {
+            const del = localStorage.removeItem("addRecord")
+            console.log(del);
+        }
+        btn1.addEventListener('click', addList);
+        btn2.addEventListener('click', GetList);
+        btn2.addEventListener('click', DeleteList);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // // Global variable
+        // let name = "Hello";
+
+        // // declaring the function
+        // function fullName() {
+        //     console.log(name); //Hello
+        // }
+        // fullName();
+
+        // changing the global variable value inside the function
+
+        // // Global variable
+        // let name = "Hello";
+
+        // // declaring the function
+        // function fullName() {
+        //     name = "Welcome"
+        //     console.log(name); //Welcome
+        // }
+        // fullName();
+
+        // Local Scope
+
+        // program showing local scope of a variable
+        let a = "hello";
+
+        function greet() {
+            let b = "World"
+            console.log(a + b);
+        }
+
+        greet();
+        console.log(a + b); // error
+    </script>
+</body>
+
+</html>

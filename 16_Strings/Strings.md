@@ -126,10 +126,10 @@ In JavaScript, the backslash \ is used as an escape character. It allows you to 
 | \\   | \      | Backslash    |
 
 ```js
-// let textStr = "My name is "Thapa Technical " & I am a Full Stack Developer. ";
+// let textStr = "My name is "Naveen R " & I am a Full Stack Developer. ";
 let text =
-  "My name is ' Thapa Technical ' & \\ I am a \"Full Stack \" Developer. ";
-// let text = 'My name is " Thapa Technical " & I am a Full Stack Developer. ';
+  "My name is ' Naveen R ' & \\ I am a \"Full Stack \" Developer. ";
+// let text = 'My name is " Naveen R " & I am a Full Stack Developer. ';
 
 console.log(text);
 ```

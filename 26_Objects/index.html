@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //    creating an object with values.
+        const person = {
+            firstName: 'devjunction',
+            lastName: 'point',
+            age: 250,
+            country: 'India',
+            city: 'mumbai',
+            skills: [
+                'HTML',
+                'CSS',
+                'JavaScript'
+            ],
+            isMarried: false,
+            getFullName: function () {
+                return `${this.firstName} and ${this.lastName}`
+            }
+        }
+        console.log(person)
+        // accessing the value of an object
+        console.log(person.age);
+        // accessing the value of an object
+        console.log(person['country']);
+
+        console.log(person.getFullName());
+
+        // object methods.
+
+        // 1. Object.assign method is used to copt the object without modifying the original data.
+
+        const copyObjectData = Object.assign({}, person);
+        console.log(copyObjectData)
+
+        // 2. object.key will give the key name from the object in an array
+        const keys = Object.keys(copyObjectData);
+        console.log(keys);
+
+        // 3. Object.values will give the value from the object in an array
+        const val = Object.values(copyObjectData);
+        console.log(val);
+
+        // 4. Object.entires will get the keys and values in an array
+        const ent = Object.entries(copyObjectData);
+        console.log(ent)
+
+        // 5. hasOwnProperty: To check if a specific key or property exist in an object
+        console.log(copyObjectData.hasOwnProperty('city'))
+        console.log(copyObjectData.hasOwnProperty('cityx'))
+
+    </script>
+</body>
+
+</html>

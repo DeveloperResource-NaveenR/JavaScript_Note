@@ -25,7 +25,18 @@
 | 21    |                                                          [Events](./22_Events/Events.md)                                                          |
 | 22    |                            [Local Storage](./23_LocalStorage/localStorage.md)                            |
 | 23    |                                        [Date Objects](./24_Date_Object/date.md)                                        |
-| 24    |                             [Time Base Events](./25_Time_Based_Events/TimeBasedEvent.md)                              |
+| 24    |                             [Time Base Events](./25_Time_Based_Events/TimeBasedEvent.md)|
+| 25    |                             [Objects](./26_Objects/object.md)|
+| 26    |                             [How JavaScript Works](./27_How_JS_Work/JSWorks.md)|
+| 27    |                             [asynchronous  and synchronous](./27_How_JS_Work/Sync&ASync.md)|
+| 28    |                             [call stack in JS](./27_How_JS_Work/callStack.md)|
+| 29    |                             [clouser in JS](./27_How_JS_Work/clouser.md)|
+| 30    |                             [Hosting in JS](./27_How_JS_Work/hosting.md)|
+| 31    |                             [Scope variable in JS](./27_How_JS_Work/Scopr.md)|
+| 32    |                             [Class Object](./25_Time_Based_Events/TimeBasedEvent.md)|
+| 33    |                             [ECMA SCRIPTS 2015-2023](./28_ECMASCRIPT)|
+| 34    |                             [Advance JS](./29_ADVANCE_JS)|
+| 35    |                             [Higher Order Functions](./29_ADVANCE_JS/Higher_Order_function.md)|
 
 ❤️❤️❤️👍🩷 HAPPY CODING ❤️❤️❤️👍🩷
 

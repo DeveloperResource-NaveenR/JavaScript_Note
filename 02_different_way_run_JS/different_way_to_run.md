@@ -12,12 +12,12 @@
 
 * Right-click on the display and select Inspect. (F12 shortcut).
 
-![Google Chrome](/JavaScript_Note/images/inspect-browser.png)
+![Google Chrome](https://github.com/DeveloperResource-NaveenR/JavaScript_Note/blob/main/images/inspect-browser.png)
 
 * Now on the developer tools select the Console tab and then start writing your javascript code.
 
 
-![Google Chrome](/JavaScript_Note/images/js_code_on_chrome_console.png)
+![Google Chrome](https://github.com/DeveloperResource-NaveenR/JavaScript_Note/blob/main/images/js_code_on_chrome_console.png)
 
 
 # Using Node.js
@@ -27,7 +27,7 @@
 * Install the latest version of Node.js.
 * Install an IDE/Text Editor like Visual Studio Code. In VS code, create a file > write JS code > save it with .js extension
 
-![Google Chrome](/JavaScript_Note/images/hello-node-ide.png)
+![Google Chrome](https://github.com/DeveloperResource-NaveenR/JavaScript_Note/blob/main/images/hello-node-ide.png)
 
 * Open up the terminal/command prompt > navigate to the file location > type node hello.js > hit enter.
 
@@ -56,16 +56,16 @@ Similarly create a JS file, write the following JS code and save it with .js ext
 ```js
 console.log('hello world');
 ```
-![Google Chrome](/JavaScript_Note/images/main-js.png)
+![Google Chrome](https://github.com/DeveloperResource-NaveenR/JavaScript_Note/blob/main/images/main-js.png)
 
 * From inside the HTML file, we need to link the main.js file to use it. You can achieve that by adding the following code in main.html.
 
 ```html
 <script scr="main.js"></script>
 ```
-![Google Chrome](/JavaScript_Note/images/main-html.png)
+![Google Chrome](https://github.com/DeveloperResource-NaveenR/JavaScript_Note/blob/main/images/main-html.png)
 
 * Open the main.html file using a browser.
 * To check if our JS code ran or not, Right click on the web page > Inspect > Choose console tab.
 
-![Google Chrome](/JavaScript_Note/images/console-tab.png)
+![Google Chrome](https://github.com/DeveloperResource-NaveenR/JavaScript_Note/blob/main/images/console-tab.png)

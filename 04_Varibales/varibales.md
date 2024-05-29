@@ -95,54 +95,33 @@ const a = 10;
 console.log(a);
 ```
 
-# Scope of a Variable
+## What are the differences between let, const and var?
 
-The scope of a variable is determined by the location where it is declared. It can be declared in the global scope, in a function, in a loop.
+In JavaScript, var, let, and const are all used to declare variables, but they have different scoping rules and behavior.
 
-1. Global Scope - The variable is accessible in the entire program
-2. Local Scope - The variable is accessible only in the function where it is declared
+- var: Variables declared with var are function scoped, which means that they are only accessible within the function in which they are declared. If a variable is declared with var outside of any function, it becomes a global variable and can be accessed from anywhere in the code. Variables declared with var can be reassigned new values at any time.
 
-```js
-var user = "John"; // global scope
-function sayHello() {
-  console.log(user);
-}
-sayHello();
-```
+- let: Variables declared with let are block scoped, which means that they are only accessible within the block in which they are declared. Variables declared with let can also be reassigned new values at any time.
 
-# 2. Local Scope
+- const: Variables declared with const are also block scoped, similar to let. The main difference is that variables declared with const cannot be reassigned new values after they have been initialized. This means that once a variable is declared with const, its value is constant and cannot be changed.
 
-```js
-function sayHello() {
-  var user = "John"; // local scope
-  console.log(user);
-}
-sayHello();
-// undefined 👇
-// console.log(user);
-```
+In summary, var is function scoped and can be reassigned, let and const are block scoped and const can't be reassigned.
 
-# Interview Questions:
-## 1 what are variables used for in javascript programs?
+let and const were introduced in ECMAScript 6 (ES6), and are recommended to use over var as they provide better variable scoping and prevent accidental reassignments.
 
-Variables are used to store values in a program to be used later on.
+## When to use let, const and var?
 
-## 2.How many types of variables are there in JavaScript?
+When deciding which keyword to use when declaring a variable in JavaScript, consider the following guidelines:
 
-There are 5 types of variables in JavaScript: numbers, strings, booleans, arrays, and objects.
+- Use const when you know that a variable's value will not change. This helps prevent accidental reassignments and makes the code more readable by indicating that the variable's value is constant.
 
-## 3. What is a global variable JavaScript?
+- Use let when you know that a variable's value will change, but it will only be used within a specific block of code. This helps to limit the scope of the variable and prevent naming conflicts.
 
-Global variables are variables that are accessible in the entire program.
+- Use var only when necessary. It is function scoped and its behavior is similar to let but it's considered as legacy and not recommended to use in modern javascript development.
 
-## 4. What is a local variable JavaScript?
+It's also worth noting that const does not make the variable immutable, just the reference to it, if the variable is an object or an array, you can still change its properties or elements.
 
-Local variables are variables that are accessible only in the function where they are declared.
-
-
-## 5. What is scope of a variable in JavaScript?
-
-The scope of a variable is the area of the program where it can be used. It can be used in the entire program or only in a specific part of the program.
+In summary, prefer const over let when you don't need to reassign the value, and use let when you are going to reassign. Avoid using var unless you need its function-scoped behavior.
 
 
 

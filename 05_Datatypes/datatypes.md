@@ -286,16 +286,29 @@ function greet() {
 
 greet(); // calling function
 ```
+## How to check DataType?
 
-### Exercise: Level 1
-1. Declare a variable named learn and assign it to an initial value 'JavaScript'.
-2. Print the string on the browser console using console.log().
-3. Declare a variable named age and assign it to an initial value 30.
-4. Declare a variable named eligible and assign it to an initial value true.
-5. Declare a variable named empty and assign it to an initial value empty.
+* To check what type data is stored inside the variable we use the typeof method.
 
+```js
+let firstName = "naveen";
+let age = 20;
+let eligible = true;
+let job;
+let nullValue = null;
 
+console.log(firstName); // naveen
+console.log(age); // 20
+console.log(eligible); // true
+console.log(job); // undefined
+console.log(nullValue); // null
 
+console.log(typeof firstName); // string
+console.log(typeof age); // number
+console.log(typeof eligible); //boolean
+console.log(typeof job); // undefined
+console.log(typeof nullValue); // object
+```
 
 
 

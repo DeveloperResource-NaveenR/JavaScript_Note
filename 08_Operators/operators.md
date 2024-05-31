@@ -1,6 +1,8 @@
-# EXPRESSIONS AND OPERATORS
+# OPERATORS
+operators are special symbols that perform operations on one or more operands (values).
 
-Types of Operators in JS
+## Types of Operators in JS
+
 1. Assignment operators
 2. Arithmetic operators
 3. Comparison operators
@@ -11,7 +13,8 @@ Types of Operators in JS
 
 # Assignment operators
 
-Assignment operators in programming are symbols used to assign values to variables. They take the value on the right side of the operator and assign it to the variable on the left side.
+We use assignment operators to assign values to variables. 
+
 ```js
 // examples
 let myFavNum1 = 15;
@@ -19,7 +22,7 @@ console.log(myFavNum1);
 ```
 # Arithmetic operators.
 
-Arithmetic operators in programming perform basic mathematical operations on variables or values. They include addition, subtraction, multiplication, division, and modulus.
+We use arithmetic operators to perform arithmetic calculations like addition, subtraction, etc.
 
 - Addition(+): a + b
 - Subtraction(-): a - b
@@ -56,7 +59,7 @@ console.log(sum);
 var m = 15;
 var n = 3;
 var quotient = m / n;
-console.log(quotient);
+console.log(quotient); // 5
 ```
 ## Modulus (%): Returns the remainder when the left operand is divided by the right operand.
 ```js
@@ -65,9 +68,16 @@ var d = 5;
 var remainder = c % d;
 console.log(remainder);
 ```
+
+## Exponentiation
+```js
+let a = 10;
+let b = a**2
+console.log(a);
+```
 # Comparison Operators
 
-In programming we compare values, we use comparison operators to compare two values. We check if a value is greater or less or equal to other value.
+We use comparison operators to compare two values and return a boolean value 
 
 ![Comparison Operators](comparison_operators.png)
 
@@ -147,6 +157,8 @@ As rule of thumb, if a value is not true with == it will not be equal with ===. 
 
 
 # Logical Operators
+
+We use logical operators to perform logical operations on boolean expressions
 
 The following symbols are the common logical operators:
 

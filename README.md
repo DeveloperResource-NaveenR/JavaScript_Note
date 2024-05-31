@@ -1,12 +1,14 @@
 # Complete JavaScript Syllabus - Basic to Advanced
 
-## [Introduction](/JavaScript_Note/01_Introduction&Feature/Intoduction&Feature.md)
+## [Introduction](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/01_Introduction%26Feature/Intoduction%26Feature.md)
+(https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/05_Datatypes/datatypes.md)
+
 
 - What is a programming language?
 - Introduction
   - JavaScript
 
-## [History of JavaScript](/JavaScript_Note/01_Introduction&Feature/Intoduction&Feature.md)
+## [History of JavaScript](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/01_Introduction%26Feature/Intoduction%26Feature.md)
 
 - JavaScript history
 - ECMAScript
@@ -17,7 +19,7 @@
 - Versions of JavaScript & History
 - Backward & Forward compatible
 
-## [JavaScript Features](/JavaScript_Note/01_Introduction&Feature/Intoduction&Feature.md)
+## [JavaScript Features](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/01_Introduction%26Feature/Intoduction%26Feature.md)
 
 - High Level Language
 - Garbage Collected
@@ -34,7 +36,7 @@
 - Single Threaded
 - Platform Independent
 
-## [Value, Variable](/JavaScript_Note/04_Varibales/varibales.md)
+## [Value, Variable](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/04_Varibales/varibales.md)
 
 - Value, Variable
     - let
@@ -43,7 +45,7 @@
 - Difference between let, const and var?
 - When to use let, const and var ?  
 
-## [Data types](/JavaScript_Note/05_Datatypes/datatypes.md)
+## [Data types](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/05_Datatypes/datatypes.md)
 
 - What are Data Types ?
 - Difference between Primitive and Non-Primitive Data Types ?
@@ -59,7 +61,7 @@
   - function
 - How to check DataType ?
 
-## [Type Conversion](/JavaScript_Note/06_TypeConversion/Conversion_data-type.md)
+## [Type Conversion](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/06_TypeConversion/Conversion_data-type.md)
 
 - Implicit type conversion/Automatic Type conversion/Coercion
 - Explicit type conversion/Manual Type conversion
@@ -77,14 +79,14 @@
       - Undefined to Boolean
   - parseInt & parseFloat
 
-## [Comments](/JavaScript_Note/07_Comments/comments.md)
+## [Comments](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/07_Comments/comments.md)
 
 - What is comment ?
   - Single line comment
   - Multi line comment
 
 
-## [JavaScript operators](/JavaScript_Note/08_Operators/operators.md)
+## [JavaScript operators](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/08_Operators/operators.md)
 
 - Assignment operator
   - =
@@ -140,8 +142,12 @@
 
 - Loose equality operator == VS Strict equality operator ===
 
+## [Scope](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/09_Scopes/scopes.md)
 
-## [Conditional statements](/JavaScript_Note/10_conditions/conditions.md)
+- Global Scope
+- Local Scope
+
+## [Conditional statements](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/10_conditions/conditions.md)
 
 - if
 - if else
@@ -149,7 +155,7 @@
 - Nested If else
 - Switch case
 
-## [Loops](/JavaScript_Note/12_Loops/loops.md)
+## [Loops](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/12_Loops/loops.md)
 
 - For Loop
 - While Loop

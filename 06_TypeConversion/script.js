@@ -153,52 +153,33 @@ console.log(bolexplict); // false
 bolexplict = Boolean(NaN);
 console.log(bolexplict); // false
 
-// Checking Data Types and Casting
-let firstName = 'naveen'      // string
-let lastName = 'rapelly'        // string
-let country = 'inida'         // string
-let city = 'mumbai'           // string
-let age = 25                   // number, it is not my real age, do not worry about it
-let job                         // undefined, because a value was not assigned
 
+// String to Int
+let num1 = '10'
+let numInt1 = parseInt(num1)
+console.log(numInt1) // 10
 
-console.log(typeof firstName)   // string
-console.log(typeof lastName)    // number
-console.log(typeof country)     // string
-console.log(typeof city)        // string
-console.log(typeof age)         // number
-console.log(typeof job)         // undefined
+let num2 = '10'
+let numInt2 = Number(num2)
+console.log(numInt2) // 10
 
-
-
-
-//// String to Int
-let num = '10'
-let numInt = parseInt(num)
-console.log(numInt) // 10
-let num = '10'
-let numInt = Number(num)
-
-console.log(numInt) // 10
-let num = '10'
-let numInt = +num
-
-console.log(numInt) // 10
+let num3 = '10'
+let numInt3 = +num3
+console.log(numInt3) // 10
 
 // String to Float
 
-let num = '9.81'
-let numFloat = parseFloat(num)
+let num4 = '9.81'
+let numFloat4 = parseFloat(num4)
+console.log(numFloat4) // 9.81
 
-console.log(numFloat) // 9.81
-let num = '9.81'
-let numFloat = Number(num)
+let num5 = '9.81'
+let numFloat5 = Number(num5)
+console.log(numFloat5) // 9.81
 
-console.log(numFloat) // 9.81
-let num = '9.81'
-let numFloat = +num
-
-console.log(numFloat) // 9.81
+let num6 = '9.81'
+let numFloat6 = +num6
+console.log(numFloat6) // 9.81
 
 
 // Float to Int

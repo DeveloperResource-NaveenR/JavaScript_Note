@@ -1,43 +1,158 @@
-# Learn JavaScript
+# Complete JavaScript Syllabus - Basic to Advanced
 
-| # Day |                                                                       Topics                                                                        |
-| ----- | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 01    |                                                             [Introduction](./01_Introduction/intoduction.md)                                                             |
-| 02    |                                               [Different way to run JS](./02_different_way_run_JS/different_way_to_run.md)                                                |
-| 03    |                             [Console](./03_console/console.md)                             |
-| 04    |                                            [Variables](./04_Varibales/varibales.md)                                             |
-| 05    |                                                     [DataTypes](./05_Datatypes/datatypes.md)                                                      |
-| 06    |                                                       [Operator](./06_Operators/operators.md)                                                       |
-| 07    |                                                 [Comments](./07_Comments/comments.md)                                                 |
-| 08    |                                                    [Type Conversion](./08_TypeConversion/Conversion_data-type.md)                                                    |
-| 09    |                             [Conditions](./09_conditions/script.js)                              |
-| 10    |                                           [Exercise Problems](./11_Problems/script.js)                                           |
-| 11    |                      [Loops](./12_Loops/loops.md)                      |
-| 12    |                                  [Exercise Problems](./13_Problems/script.js)                                  |
-| 13    |                             [Functions](./14_Function/function.md)                              |
-| 14    |                                         [Arrays](./15_Arrays/array.md)                                          |
-| 15    |                                                    [Strings](./16_Strings/Strings.md)                                                    |
-| 16    |                                                        [Match Objects](./17_Math_Object/math_object.md)                                                         |
-| 17    |                                            [Variable Scope](./18_Variable_Scope/variable_scope.md)                                             |
-| 18    |                                                  [Window Object (BOM)](./19_Window/window.md)                                                   |
-| 19    |                                                   [DOM Part 1](./20_DOM_Part_1/DOM_Part_1.md)                                                   |
-| 20    |                                  [DOM Part 2](./21_DOM_Part_2/DOM_part2.md)                                   |
-| 21    |                                                          [Events](./22_Events/Events.md)                                                          |
-| 22    |                            [Local Storage](./23_LocalStorage/localStorage.md)                            |
-| 23    |                                        [Date Objects](./24_Date_Object/date.md)                                        |
-| 24    |                             [Time Base Events](./25_Time_Based_Events/TimeBasedEvent.md)|
-| 25    |                             [Objects](./26_Objects/object.md)|
-| 26    |                             [How JavaScript Works](./27_How_JS_Work/JSWorks.md)|
-| 27    |                             [asynchronous  and synchronous](./27_How_JS_Work/Sync&ASync.md)|
-| 28    |                             [call stack in JS](./27_How_JS_Work/callStack.md)|
-| 29    |                             [clouser in JS](./27_How_JS_Work/clouser.md)|
-| 30    |                             [Hosting in JS](./27_How_JS_Work/hosting.md)|
-| 31    |                             [Scope variable in JS](./27_How_JS_Work/Scopr.md)|
-| 32    |                             [Class Object](./25_Time_Based_Events/TimeBasedEvent.md)|
-| 33    |                             [ECMA SCRIPTS 2015-2023](./28_ECMASCRIPT)|
-| 34    |                             [Advance JS](./29_ADVANCE_JS)|
-| 35    |                             [Higher Order Functions](./29_ADVANCE_JS/Higher_Order_function.md)|
+## [Introduction](/JavaScript_Note/01_Introduction&Feature/Intoduction&Feature.md)
 
-❤️❤️❤️👍🩷 HAPPY CODING ❤️❤️❤️👍🩷
+- What is a programming language?
+- Introduction
+  - JavaScript
+
+## [History of JavaScript](/JavaScript_Note/01_Introduction&Feature/Intoduction&Feature.md)
+
+- JavaScript history
+- ECMAScript
+  - JScript
+  - ActionScript
+  - JavaScript
+  - ECMA-262 and ISO/IEC 16262
+- Versions of JavaScript & History
+- Backward & Forward compatible
+
+## [JavaScript Features](/JavaScript_Note/01_Introduction&Feature/Intoduction&Feature.md)
+
+- High Level Language
+- Garbage Collected
+- Interpreted Language (JIT)
+  - Parsing
+  - Interpretation
+  - Profiling
+  - Compilation
+  - Execution
+- Multi Paradigm
+- Prototype based functions
+- First Class Function
+- Dynamically Type
+- Single Threaded
+- Platform Independent
+
+## [Value, Variable](/JavaScript_Note/04_Varibales/varibales.md)
+
+- Value, Variable
+    - let
+    - const
+    - var
+- Difference between let, const and var?
+- When to use let, const and var ?  
+
+## [Data types](/JavaScript_Note/05_Datatypes/datatypes.md)
+
+- What are Data Types ?
+- Difference between Primitive and Non-Primitive Data Types ?
+- Primitive Data types (In built data types)
+  - Number
+  - String
+  - Undefined
+  - Boolean
+  - Symbol (ensuring privacy and uniqueness, and preventing name clashes)
+  - BigInt
+- Non-primitive Data types
+  - Object
+  - function
+- How to check DataType ?
+
+## [Type Conversion](/JavaScript_Note/06_TypeConversion/Conversion_data-type.md)
+
+- Implicit type conversion/Automatic Type conversion/Coercion
+- Explicit type conversion/Manual Type conversion
+  - Number
+      - String to Number
+      - Boolean to Number
+      - Undefined to Number
+  - String
+      - Number to String
+      - Boolean to String
+      - Undefined to String
+  - Boolean
+      - String to Boolean
+      - Number to Boolean
+      - Undefined to Boolean
+  - parseInt & parseFloat
+
+## [Comments](/JavaScript_Note/07_Comments/comments.md)
+
+- What is comment ?
+  - Single line comment
+  - Multi line comment
 
 
+## [JavaScript operators](/JavaScript_Note/08_Operators/operators.md)
+
+- Assignment operator
+  - =
+  - +=
+  - -=
+  - *=
+  - /=
+  - %=
+  - **=
+
+- Arithmetic operator
+  - \+	Addition
+  - \-	Subtraction
+  - \*	Multiplication
+  - **	Exponentiation (ES2016)
+  - /	Division
+  - %	Modulus (Division Remainder)
+
+- Comparison operator
+  - ==	equal to
+  - ===	equal value and equal type
+  - !=	not equal
+  - !==	not equal value or not equal type
+  - \>	greater than
+  - <	less than
+  - \>=	greater than or equal to
+  - <=	less than or equal to
+  - ?  ternary operator
+    
+- Logical operators
+  - &&	logical and
+  - ||	logical or
+  - !	logical not
+
+- Unary operator
+  - Unary operator(+)
+  - Unary operator(-)
+
+- Increment Operator
+  - Prefix Increment (++x)
+  - Postfix Increment (x++)
+
+- Decrement Operator
+  - Pre-decrement (--X)
+  - Post-decrement (X--)
+
+- Conditional (ternary) operator
+
+- Operator precedence
+  - [Operator Precedence Table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table)
+
+- Truth table of AND, OR and NOT
+
+- Loose equality operator == VS Strict equality operator ===
+
+
+## [Conditional statements](/JavaScript_Note/10_conditions/conditions.md)
+
+- if
+- if else
+- else if
+- Nested If else
+- Switch case
+
+## [Loops](/JavaScript_Note/12_Loops/loops.md)
+
+- For Loop
+- While Loop
+- Do-While Loop
+- for-of-loop
+- for-in-loop

@@ -64,16 +64,15 @@ while (i <= 5) {
 * first execute the code then check the condition.
 * in do-while loop end of the syntax there will be semi colon (;)
 
-# syntax
 ```js
+// syntax
 initialization
 do{
     //code
     increment/decrement
 }while(condition);
 
-```
-```js
+
 let j = 1;
 do {
   console.log("j value = ", j);
@@ -131,7 +130,6 @@ for (let i = 0; i <= 5; i++) {
   }
   console.log(i)
 }
-
 // 0 1 2
 
 ```

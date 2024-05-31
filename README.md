@@ -1,8 +1,6 @@
 # Complete JavaScript Syllabus - Basic to Advanced
 
 ## [Introduction](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/01_Introduction%26Feature/Intoduction%26Feature.md)
-(https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/05_Datatypes/datatypes.md)
-
 
 - What is a programming language?
 - Introduction

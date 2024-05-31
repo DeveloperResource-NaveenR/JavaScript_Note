@@ -6,7 +6,7 @@
 - Introduction
   - JavaScript
 
-## [History of JavaScript](/JavaScript_Note/blob/main/01_Introduction%26Feature/Intoduction%26Feature.md)
+## [History of JavaScript](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/01_Introduction%26Feature/Intoduction%26Feature.md)
 
 - JavaScript history
 - ECMAScript

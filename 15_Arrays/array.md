@@ -1,13 +1,14 @@
 # ARRAYS IN JAVASCRIPT
 
 # what we will cover below topics
-1. Creating Array/Accessing Element/Modifying Elements
-2. How to Insert,Add,Replace and Delete Element in array.
-3. Filter in an array
-4. Array Methods
-5. Array Traversal/Iterating Over Array
-6. Searching in an Array
-7. How to sort and compare an array
+
+
+## What is an Array ?
+
+Array is collection of similar data types.
+
+JavaScript Array is a data structure that allows you to store and organize multiple values within a single variable. It is a versatile and dynamic object. It can hold various data types, including numbers, strings, objects, and even other arrays. Arrays in JavaScript are zero-indexed i.e. the first element is accessed with an index 0, the second element with an index of 1, and so forth
+
 
 ```js Imp
 * Iterable - object where you can use the for-of loop
@@ -15,13 +16,9 @@
 * Arrays as Objects:  Arrays in JavaScript are a specific type of object that has numeric keys (indices) and a length property. The indices are automatically maintained, and the length property is automatically updated when you add or remove elements from the array.
 * typeof Operator: The typeof operator in JavaScript returns "object" for both arrays and regular objects.
 ```
+## How to create an Array ?
+You can create an array in JavaScript by using square brackets [] or Array Constructor or Array Literals. Here's an example code snippet:
 
-**JavaScript Array is a data structure that allows you to store and organize multiple values within a single variable. It is a versatile and dynamic object. It can hold various data types, including numbers, strings, objects, and even other arrays. Arrays in JavaScript are zero-indexed i.e. the first element is accessed with an index 0, the second element with an index of 1, and so forth**
-#  Creating Arrays
-
-👉 Arrays in JavaScript can be created using the Array constructor or with array literals (square brackets []).
-
-## we can create an array in three ways.
 1. Array Constructor
 2. Array Literal
 3. Empty Array
@@ -43,8 +40,9 @@ let arr = [];
 console.log(typeof arr);  // object
 
 ```
-## Accessing Elements:
-👉 Accessing Elements:  Array elements are accessed using zero-based indexes.
+## How to Accessing Element in Array ?
+
+Array elements are accessed using zero-based indexes.
 
 ```js
 console.log(fruits1[0]);  // apple
@@ -52,36 +50,50 @@ console.log(fruits1[1]);  //orange
 console.log(fruits1[2]);   // banana
 ```
 
-## Modifying Elements:
-👉 Modifying Elements: You can modify array elements by assigning new values to specific indices.
+## How to Modifying Elements ?
+
+You can modify array elements by assigning new values to specific index.
 
 ```js
 fruits1[1] = "Graphs";
 console.log(fruits1);
 ```
 ## Converting an Array to a String
-👉 toString() method converts an array to a comma-separated string of its values.
+
+toString() method converts an array to a comma-separated string of its values.
+
 ```js
 const str = fruits1.toString();
 console.log(str); // apple,Graphs,banana
 ```
-## Arrays Are Objects:
-👉 Arrays in JavaScript are a special type of objects. The typeof operator returns “object” for arrays, but they are best described as arrays.
+## Arrays are object ?
 
-👉 Unlike regular objects, arrays use numeric indices to access their elements.
+Arrays in JavaScript are a special type of objects. The typeof operator returns “object” for arrays, but they are best described as arrays.
 
-## Array Traversal / Iterating Over Arrays 👇
+Unlike regular objects, arrays use numeric index to access their elements.
+
+## Array length property ?
+In JavaScript, the length property of an array returns the number of elements in the array.
+
+```js
+let len = fruits1.length;
+console.log(len);
+```
+
+## Array Traversal / Iterating Over Arrays
+
 1. for loop 
 2. while loop
 3. for of loop
 4. for in loop
 5. forEach method
-6. map 
+6. map
 
-## 1. for loop ❤️
-👉 The for loop is a basic technique to iterate over an array.
 
-👉 It uses the array’s length property to determine the number of iterations.
+## 1. for loop 
+The for loop is a basic technique to iterate over an array.
+
+It uses the array’s length property to determine the number of iterations.
 
 Syntax:
 ```js
@@ -91,10 +103,10 @@ for (let i = 0; i < array.length; i++) {
 }
 ```
 
-## 2. while loop ❤️
-👉 The while loop runs until a given condition is true.
+## 2. while loop
+The while loop runs until a given condition is true.
 
-👉 It’s similar to the for loop but with a more flexible condition.
+It’s similar to the for loop but with a more flexible condition.
 
 Syntax:
 ```js
@@ -106,11 +118,9 @@ while (i < array.length) {
 }
 ```
 ## 3. for of loop ❤️
-👉 The for-of loop simplifies array iteration by directly providing the array elements.
 
-👉 It doesn’t require an index and is useful when you only need to access elements.
+The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.It doesn’t require an index and is useful when you only need to access elements.
 
-👉 The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
 
 Syntax:
 ```js
@@ -127,10 +137,10 @@ for(let item of city){
     console.log(item);
 }
 ```
-## 4. for in loop ❤️
-👉 The for...in loop is used to iterate over the properties (including indices) of an object. 
+## 4. for in loop
+The for...in loop is used to iterate the element in array and get the index values.
 
-👉 **for in loop gives the index value** 
+**for in loop gives the index value** 
 
 Syntax:
 ```js
@@ -148,18 +158,19 @@ for(let item in city){
 }
 ```
 
-## ❤️ Difference between for in and for of ❤️
-👉 for...in: “o” for objects (iterates over keys).
-👉 for...of: “o” for other (iterates over values).
+## What is difference between for in and for of loop ?
+for...in: gives the index value
 
-## 5. forEach() Method ❤️
-👉The arr.forEach() method is primarily used for iterating over array elements and executing a provided function once for each array element.
+for...of: give the element value.
 
-👉 forEach() method will not return anything. it's give undefined
+## What is forEach() Method ? 
+The arr.forEach() method is primarily used for iterating over array elements and executing a provided function once for each array element.
 
-👉 forEach() method It does not create a new array.
+forEach() method will not return anything. it's give undefined
 
-👉 Syntax:
+forEach() method It does not create a new array.
+
+Syntax:
 ```js
 array.forEach(function(currentValue, index, array){
 
@@ -182,11 +193,15 @@ const citites = city.forEach((currentElement,index,arr) => {
 console.log(citites);
 ```
 
-## 6.map() Method ❤️
-👉 map method is also used for iterating over array elements, but its main purpose is to create a new array by applying a provided function to each element of the original array.
-👉 It returns a new array with the results of applying the function to each element.
-👉 map() method will keep original array as same.
-👉 Using map() method we can modify the element in array.
+## what is map() Method ?
+map method is also used for iterating over array elements, but its main purpose is to create a new array by applying a provided function to each element of the original array.
+
+It returns a new array with the results of applying the function to each element.
+
+map() method will keep original array as same.
+
+Using map() method we can modify the element in array.
+
 Syntax:
 ```js
 array.map((currentValue, index, array) => {
@@ -203,9 +218,9 @@ console.log(cities);
 console.log(typeof cities);
 console.log(city);
 ```
-## # Differences between forEach() and map() ❤️
+## What is differences between forEach() and map() ?
 
-| forEach() ❤️  | map() ❤️ |
+| forEach()   | map()  |
 | -------- | ------- |
 | forEach method will not return anything it gives undefined | Returns the new array.    |
 | ForEach Method will not create new array | map Method will create new array and original array will be same    |
@@ -215,35 +230,43 @@ console.log(city);
 | Useful for performing operations on each element without modifying the array.   |    |
 
 
-👉 forEach: It doesn't return a value. The forEach method is used for iterating over the elements of an array and performing a side effect, such as modifying the array or performing a task for each element.
-👉 side effect is we are modifying the current array that is side effect.
-👉 map: It returns a new array containing the results of applying a function to each element in the original array. The original array remains unchanged.
+**forEach**: It doesn't return a value. The forEach method is used for iterating over the elements of an array and performing a side effect, such as modifying the array or performing a task for each element.
+
+**side effect is we are modifying the current array that is side effect**
+
+**map**: It returns a new array containing the results of applying a function to each element in the original array. The original array remains unchanged.
 
 ## Chaining ❤️
-👉 forEach: It doesn't return a value, so it cannot be directly chained with other array methods.
-👉 example:we have an array and we want to divide the array value with 2 and filter the array this is not possible using forEach()
+**forEach**: It doesn't return a value, so it cannot be directly chained with other array methods.
 
-👉 map: Since it returns a new array, you can chain other array methods after using map.
+**Here is an Example**:
 
-## Examples:
+we have an array and we want to divide the array value with 2 and filter the array this is not possible using forEach()
+
+**map**: Since it returns a new array, you can chain other array methods after using map.
+
+Here is the Examples:
 
 
-## Use Case ❤️
-👉 forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.
+Use Case
 
-👉 map: Used when you want to create a new array based on the transformation of each element in the original array.
+**forEach**: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.
 
-# 👇 How to Insert, Add, Replace and Delete Elements in Array(CRUD) 👇
+**map** : Used when you want to create a new array based on the transformation of each element in the original array.
 
-1👉: push(): Method that adds one or more elements to the end of an array.
+## How to Insert, Add, Replace and Delete Elements in Array(CRUD) ?
 
-2👉: pop(): Method that removes the last element from an array.
+1: **push()**: Method that adds one or more elements to the end of an array.
 
-3👉: unshift(): Method that adds one or more elements to the beginning of an array.
+2: **pop()**: Method that removes the last element from an array.
 
-4👉: shift(): Method that removes the first element from an array.
+3: **unshift()**: Method that adds one or more elements to the beginning of an array.
+
+4: **shift()**: Method that removes the first element from an array.
+
 ```js
 let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+
 // 1: push(): Method that adds one or more elements to the end of an array.
 console.log(fruits.push("guava"));  //  ["apple", "orange", "mango", "grapes", "banana","guava"]
 console.log(fruits); // ["apple", "orange", "mango", "grapes", "banana"]
@@ -262,33 +285,34 @@ console.log(fruits.shift());
 console.log(fruits);
 ```
 
-#  what if, we want to add or remove anywhere in an elements 👇
-👉 The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+###  what if, we want to add or remove anywhere in an elements 👇
 
-👉 splice() Method will add or remove from original array.
+The **splice()** method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
 
-👉 splice() Method will return array.
+splice() Method will add or remove from original array.
 
-👉 syntax:
+splice() Method will return array.
+
+syntax:
 ```js
 splice(start, deleteCount, item1, item2, /* …, */ itemN)
 // syntax
 arr.splice(indexValue, deleteCount, replaceBy)
 ```
-👉 Example:
+Here is the Example:
 ```js
 let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(2, 0, "graphs");
-// fruits.splice(3, 1);
+fruits.splice(2, 0, "graphs");
+fruits.splice(3, 1);
 fruits.splice(3, 0,"papaya");
 console.log(fruits);
 ```
-# 👉 what if you want to add the element at the end
+### what if you want to add the element at the end
 ```js
 fruits.splice(fruits.length, 0, "grapes");
 console.log(fruits);
 ```
-# Updating an element using splice() method
+## Updating an element using splice() method
 ```js
 let fruits = ["apple", "orange", "banana", "mango"];
 const indexOfElement = fruits.indexOf("orange");
@@ -296,26 +320,26 @@ fruits.splice(indexOfElement,1,"KIWI");
 console.log(indexOfElement)
 ```
 
-# Searching and Filter in an Array 👇
+# How to Searching and Filter in an Array 👇
 
-> For Search we have - indexOf, lastIndexOf & includes 
+For Search we have - indexOf, lastIndexOf & includes 
 
-# 1. indexOf Method 
+## 1. indexOf Method 
 
-👉 The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
-👉 The indexOf() method searches for the first occurrence of a specified value in a string or an array.
+The indexOf() method searches for the first occurrence of a specified value in a string or an array.
 
-👉 It returns the index (position) of the first occurrence of the value, or -1 if the value is not found.
+It returns the index (position) of the first occurrence of the value, or -1 if the value is not found.
 
-👉 By default, it starts searching from the beginning of the array.
+By default, it starts searching from the beginning of the array.
 
 
 syntax:
 ```js
 indexOf(searchValue, fromIndex)
 
-// searchElement is the value to be searched.
+// searchValue is the value to be searched.
 // fromIndex is the index from which the search starts.
 ```
 Example:
@@ -323,13 +347,13 @@ Example:
 const fruits = ["apple", "banana", "grapes", "mango", "orange"];
 const index = fruits.indexOf("banana"); // Returns 1
 ```
-# 2: lastIndexOf Method 
+## 2: lastIndexOf Method 
 
-👉 The lastIndexOf() method searches for the last occurrence of a specified value in a string or an array.
+The lastIndexOf() method searches for the last occurrence of a specified value in a string or an array.
 
-👉 It returns the index of the last occurrence of the value, or -1 if the value is not found.
+It returns the index of the last occurrence of the value, or -1 if the value is not found.
 
-👉 By default, it starts searching from the end of the array.
+By default, it starts searching from the end of the array.
 
 ```js
 arr.lastIndexOf(searchElement, fromIndex)
@@ -346,9 +370,9 @@ console.log(arr.lastIndexOf('d'));
 console.log(arr.lastIndexOf('g'));
 ```
 
-# 3. includes Method 
+## 3. includes Method 
 
-👉 The includes method checks whether an array includes a certain element, returning true or false.
+The includes method checks whether an array includes a certain element, returning true or false.
 
 syntax:
 
@@ -367,21 +391,21 @@ const alphabets = ["a", "b", "c", "d", "e"];
 console.log(alphabets.includes("a")); // true
 console.log(alphabets.includes("a", 1)); // false
 ```
-#  Filter In an Array 👇
+# How to Filter In an Array 👇
 
-# 1. find Method
+## 1. find Method
 
-👉 The find method is used to find the first element in an array that satisfies a provided condition. It returns the first matching element or undefined if no element is found.
+The find method is used to find the first element in an array that satisfies a provided condition. It returns the first matching element or undefined if no element is found.
 
-👉  The find() method accepts a callback function where you can define the condition.
+The find() method accepts a callback function where you can define the condition.
 
-👉  The callback function returns true or false after checking some conditions over each and every element. If true is returned then the element is returned, else the next element is checked.
+The callback function returns true or false after checking some conditions over each and every element. If true is returned then the element is returned, else the next element is checked.
 
-syntax:
+Here is the Syntax:
 ```js
 arr.find(callback(currentValue, index, arr), thisArg)
 ```
-Example:
+Here is the Example:
 ```js
 const numbers = [1, 2, 3, 4, 5, 4, 6, 7, 8, 6, 9];
 const num = numbers.find((currentElement)=>{
@@ -389,23 +413,23 @@ const num = numbers.find((currentElement)=>{
 });
 console.log(num);
 ```
-👉 find method type is number.
+find method type is number.
 
-👉 If nothing is found then undefined is returned.
+If nothing is found then undefined is returned.
 
-👉 The find() method return the element.
+The find() method return the element.
 
-👉 The find() method does not return the index of the element which satisfies the condition to get index use findIndex() method.
+The find() method does not return the index of the element which satisfies the condition to get index use findIndex() method.
 
 # 2. findIndex Method
 
-👉 The findIndex() method is the same as find() but it returns the index value of the element, not the value itself.
+The findIndex() method is the same as find() but it returns the index value of the element, not the value itself.
 
-👉 If no such element exists then returns -1.
+If no such element exists then returns -1.
 
-👉 The find() method return the index value.
+The find() method return the index value.
 
-👉 The findIndex() method accepts a callback function where you can define the condition.
+The findIndex() method accepts a callback function where you can define the condition.
 
 ```js
 arr.findIndex(callback(currentValue, index, arr), thisArg)
@@ -437,15 +461,15 @@ console.log(num1);
 
 # filter Method 
 
-👉 The filter() method in javascript is used to create a new array with the elements of the same array if elements pass a certain condition.
+The filter() method in javascript is used to create a new array with the elements of the same array if elements pass a certain condition.
 
-👉 The filter() methods accept a callback function as an argument.
+The filter() methods accept a callback function as an argument.
 
-👉 The callback function returns true or false after checking some conditions over each and every element. If true is returned then that element is added to the new array, else discarded.
+The callback function returns true or false after checking some conditions over each and every element. If true is returned then that element is added to the new array, else discarded.
 
-👉 Finally, a new array is returned with those added elements.
+Finally, a new array is returned with those added elements.
 
-syntax:
+Here is Syntax:
 ```js
 arr.filter((currentValue, index, arr) =>{
   // code goes here
@@ -462,7 +486,7 @@ const filterValue = numb1.filter((currentEle) => {
 console.log(filterValue)
 ```
 
-# find unique values in the array
+### Find unique values in the array
 
 ```js
 let unique = numb1.filter((currentEle, index, arr) => {
@@ -482,12 +506,12 @@ console.log([...new Set(numb1)])
 
 # How to Sort and Compare an Array
 
-# Sorting an Array
-👉 The sort method sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings
+## Sorting an Array
+The sort method sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings
 
-👉 The sort() method in javascript sort the array element in ascending order according to the character's Unicode value. Means it convert its element to string and sort it by comparing the string in UTF-16 code.
+The sort() method in javascript sort the array element in ascending order according to the character's Unicode value. Means it convert its element to string and sort it by comparing the string in UTF-16 code.
 
-Example:
+Here is the Example:
 ```js
 const fruit = ["mango", "banana", "apple", "orange", "watermelon"];
 console.log(fruit.sort());
@@ -523,12 +547,12 @@ const compareNumber = numbers4.sort((a,b)=>{
 console.log(compareNumber);
 
 ```
-# Reduce method
-👉  The reduce() method in javascript reduce the array element to a single value, using a reducer function.
+## Reduce method
+The reduce() method in javascript reduce the array element to a single value, using a reducer function.
 
-👉 The reduce method in JavaScript is used to accumulate or reduce an array to a single value. It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result. The reduce method takes a callback function as its first argument and an optional initial value for the accumulator as the second argument
+The reduce method in JavaScript is used to accumulate or reduce an array to a single value. It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result. The reduce method takes a callback function as its first argument and an optional initial value for the accumulator as the second argument
 
-syntax:
+Here is the syntax:
 ```js
 arr.reduce(callback(accumulator, currentValue, currentIndex, array))
 array.reduce(function callback(accumulator, currentValue, index, array) {
@@ -536,12 +560,17 @@ array.reduce(function callback(accumulator, currentValue, index, array) {
   // Return the updated accumulator value
 }, initialValue);
 ```
-👉 callback: A function that is called once for each element in the array.
-👉 accumulator: The accumulated result of the previous iterations.
-👉 currentValue: The current element being processed in the array.
-👉 index (optioal): The index of the current element being processed.
-👉 array (optional): The array reduce was called upon.
-👉 initialValue (optional): An initial value for the accumulator. If not provided, the first element of the array is used as the initial accumulator value.
+callback: A function that is called once for each element in the array.
+
+accumulator: The accumulated result of the previous iterations.
+
+currentValue: The current element being processed in the array.
+
+index (optioal): The index of the current element being processed.
+
+array (optional): The array reduce was called upon.
+
+initialValue (optional): An initial value for the accumulator. If not provided, the first element of the array is used as the initial accumulator value.
 
 ```js
 const productPrice = [100, 200, 300, 400, 500];
@@ -553,7 +582,7 @@ const totalPrice = productPrice.reduce((accum, curElem) => {
 
 # Methods in Array
 
-# concat
+## concat
 
 👉 The concat() array method in javascript is used to merge 2 or more arrays or values into a single array.
 
@@ -576,9 +605,9 @@ console.log(numbers.concat(characters, booleans));
 
 ```
 
-# Spread Operator intoduced in ECMA2020
+## Spread Operator intoduced in ECMA2020
 
-👉 spread operator (...) to merge multiple arrays and values into a single array.
+spread operator (...) to merge multiple arrays and values into a single array.
 
 ```js
 const numbers = [1, 2, 3];
@@ -592,13 +621,13 @@ console.log([...numbers, ...characters, ...booleans]);
 console.log([...numbers, 24, "John"]);
 ```
 
-# entries Method
+## entries Method
 
-👉 The entries() method in javascript returns a new Array Iterator object that contains the key/value pairs for each index in the array.
+The entries() method in javascript returns a new Array Iterator object that contains the key/value pairs for each index in the array.
 
-👉 The entries() method does not change the original array but returns a new array iterator object.
+The entries() method does not change the original array but returns a new array iterator object.
 
-👉 This iterator can be used to get the next element in the array by calling the next() method on the iterator object.
+This iterator can be used to get the next element in the array by calling the next() method on the iterator object.
 
 ```js
 arr.entries()
@@ -618,11 +647,11 @@ for (const [index, value] of iterator2) {
 }
 ```
 
-# every() Method
+## every() Method
 
-👉 The every() method in javascript executes a function for each element in the array and returns true if the function returns true for all elements.
+The every() method in javascript executes a function for each element in the array and returns true if the function returns true for all elements.
 
-👉 The original array is not modified by this method.
+The original array is not modified by this method.
 
 ```js
 arr.every(callback(currentValue, index, arr), thisArg)
@@ -639,10 +668,10 @@ console.log(arr1.every(isEven));
 console.log(arr2.every(isEven));
 ```
 
-# fill Method
-👉 The fill() method in javascript returns a modified array by filling a specified index with the specified value.
+## fill Method
+The fill() method in javascript returns a modified array by filling a specified index with the specified value.
 
-👉 The original array is not modified by the fill() method.
+The original array is not modified by the fill() method.
 
 ```js
 arr.fill(value);
@@ -655,7 +684,7 @@ arr.fill(value, start, end);
 
 // end(optional): Index where the filling is to be stopped.
 ```
-Example
+Here is the Example
 
 ```js
 const arr = ["a", "a", "a", "a", "a", "a", "a"];
@@ -670,17 +699,17 @@ console.log(arr.fill("c", 2));
 console.log(arr.fill("d", 4, 6));
 ```
 
-# join Method
+## join Method
 
-👉 The join() method in javascript joins all elements of the array as a string separated by commas or by some specified separator and returns it as a string.
+The join() method in javascript joins all elements of the array as a string separated by commas or by some specified separator and returns it as a string.
 
-👉 The function accepts 1 argument which is a separator. It is optional and its default value is a comma (",").
+The function accepts 1 argument which is a separator. It is optional and its default value is a comma (",").
 
-Syntax:
+Here is the Syntax:
 ```js
 arr.join(separator)
 ```
-👉 This method is used to join the elements of the array as a string.
+This method is used to join the elements of the array as a string.
 
 ```js
 const fruit = ["mango", "banana", "apple", "orange", "watermelon"];
@@ -694,8 +723,8 @@ console.log(fruit.join('-'));
 
 ```
 
-# values Method In Javascript
-👉 The values() method in javascript returns a new array iterator that contains values of each index in the array.
+## values Method In Javascript
+The values() method in javascript returns a new array iterator that contains values of each index in the array.
 ```js
 const array1 = [1, "star", 34, true, 23];
 const iterator = array1.values();
@@ -704,26 +733,26 @@ for (const value of iterator) {
 }
 ```
 
-# reverse Method In Javascript
+## reverse Method In Javascript
 
-👉 The reverse() method in javascript reverse the array elements from first to last.
+The reverse() method in javascript reverse the array elements from first to last.
 ```js
 const num = [1, 2, 3, 4, 5];
 console.log(num.reverse());
 ```
 
-# toString Method In Javascript
+## toString Method In Javascript
 
-👉 The toString() method in javascript returns a string representing the elements of the array.
+The toString() method in javascript returns a string representing the elements of the array.
 ```js
 const arr = [1, "star", 34, true, 23];
 console.log(arr.toString());
 ```
-# slice Method In Javascript
+## slice Method In Javascript
 
-👉 The slice() method in javascript returns a new array by copying the calling array's elements in new the array.
+The slice() method in javascript returns a new array by copying the calling array's elements in new the array.
 
-👉 The slice() method accepts 2 arguments:
+The slice() method accepts 2 arguments:
 
 1. start: It is starting position to copy the element. It is optional, its default value is 0.
 2. end: It is the ending position to copy the element. It is optional, its default value is the last index of the array.
@@ -736,11 +765,11 @@ console.log(num2);
 console.log(num3);
 console.log(num4);
 ```
-# Array.from Method In Javascript
+## Array.from Method In Javascript
 
-👉 The Array.from() method in javascript is used to convert an array like object to an array.
+The Array.from() method in javascript is used to convert an array like object to an array.
 
-👉 The Array.from() method returns a new array and does not change the original array.
+The Array.from() method returns a new array and does not change the original array.
 
 ```js
 const alphabets = "abcdefghijklmnopqrstuvwxyz";

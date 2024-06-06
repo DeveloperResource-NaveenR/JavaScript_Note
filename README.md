@@ -160,3 +160,86 @@
 - Do-While Loop
 - for-of-loop
 - for-in-loop
+
+## [Functions Basics](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/14_Function/function.md)
+
+- What is Functions ?
+- Type of functions ?
+  - Function declaration
+  - Function expression
+  - Arrow function
+  - Anonymous function
+- Function declaration VS function expression
+- Function expression and Arrow function
+    - syntax
+    - this
+    - arguments
+    - new keyword
+    - super
+    - implicit return
+- Function invoking/calling
+- Function calling from other function
+- Parameters & Arguments
+- Default parameters
+
+## [Array](https://github.com/codewithnaveenrapelli/JavaScript_Note/blob/main/15_Arrays/array.md)
+
+- What is an Array ?
+- How to create an Array ?
+  - Array Constructor
+  - Array Literal
+  - Empty Array
+- Index in Array
+- Array length property
+- How to Accessing Element in Array ?
+- How to Modifying Elements ?
+- Converting an Array to a String
+- Arrays are object ?
+- Array length property ?
+- Array Traversal / Iterating Over Arrays
+  - for loop
+  - while loop
+  - for of loop
+  - for in loop
+  - forEach method
+  - map
+- What is difference between for in and for of loop ?
+- What is forEach() Method ?
+- what is map() Method ?
+- What is differences between forEach() and map() ?
+- Chaining 
+- How to Insert,Add,Replace and Delete Element in array.
+  - push()
+  - pop()
+  - unshift()
+  - shift()
+- How to Searching and Filter in an Array
+  - indexOf 
+  - lastIndexOf
+  - includes
+- How to Filter In an Array
+  - find Method
+  - findIndex Method
+  - filter Method
+- How to Sort and Compare an Array
+  - Sort 
+  - Reduce method
+- Array Methods
+  - toString
+  - join
+  - concat
+  - splice
+  - slice
+  - sort
+  - reverse
+  - forEach
+  - at
+  - map
+  - filter
+  - reduce
+  - find
+  - findIndex
+  - some
+  - every
+  - flat
+  - flatMap

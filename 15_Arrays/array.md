@@ -1,8 +1,3 @@
-# ARRAYS IN JAVASCRIPT
-
-# what we will cover below topics
-
-
 ## What is an Array ?
 
 Array is collection of similar data types.
